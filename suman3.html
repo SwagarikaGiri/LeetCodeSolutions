@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stock Prices</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 50%;
+        }
+        th, td {
+            border: 2px double black;
+            padding: 8px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Ticker</th>
+            <th>Price</th>
+        </tr>
+        <tr>
+            <td>wipro</td>
+            <td>298.45</td>
+        </tr>
+        <tr>
+            <td>infy</td>
+            <td>999</td>
+        </tr>
+        <tr>
+            <td>tcs</td>
+            <td>2714</td>
+        </tr>
+        <tr>
+            <td>techm</td>
+            <td>485</td>
+        </tr>
+    </table>
+    
+    <br> <!-- Adding some space after the table -->
+    
+    <h1>Stock Trading</h1> <!-- Header 1 for "Stock Trading" -->
+    <form>
+        <table>
+            <tr>
+                <td>TICKER:</td>
+                <td><input type="text" name="ticker" required></td>
+            </tr>
+            <tr>
+                <td>Quantity:</td>
+                <td>
+                    <input type="number" name="quantity" min="10" max="100" step="10" required>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <input type="submit" value="Submit">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <div id="successMessage" style="display: none; text-align: center;">
+        <p>Form submitted successfully!</p>
+    </div>
+</body>
+</html>
